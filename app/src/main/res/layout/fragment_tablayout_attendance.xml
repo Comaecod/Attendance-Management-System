@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#D34E24"
+    tools:context=".AttendanceFragment">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#563F1B"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Attendance: 50/100"
+            android:layout_margin="5dp"
+            android:id="@+id/attendancefont"
+            android:textSize="30sp"
+            android:textColor="#5B85AA"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/leavefont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Leave Taken: 23"
+            android:gravity="center"
+            android:textColor="#E5D352"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/blacklistedfont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Blacklisted: No"
+            android:gravity="center"
+            android:textColor="#E5D352"
+            android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/subjectfont"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Subject: Android Project"
+                android:gravity="center"
+                android:textColor="#E5D352"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/coursefont"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Course: T.Y.B.Voc S.D."
+                android:gravity="center"
+                android:textColor="#E5D352"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/pleaseattendfont"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Please Attend Lectures from now on!"
+                android:gravity="center"
+                android:textColor="#E5D352"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</FrameLayout>

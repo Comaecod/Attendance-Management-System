@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fresco="http://schemas.android.com/tools"
+    android:background="@drawable/background_material_blackred_crop"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e31b25"
+        android:id="@+id/toolbar"
+        app:titleTextColor="#e31b25"
+        android:paddingLeft="20dp"
+        android:tooltipText="#ffffff"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <!--<TextView-->
+            <!--style="@style/TextAppearance.AppCompat.Body2"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginBottom="16dp"-->
+            <!--android:fontFamily="sans-serif-smallcaps"-->
+            <!--android:padding="16dp"-->
+            <!--android:text="Tap below To Choose Profile Picture"-->
+            <!--android:textAlignment="center"-->
+            <!--android:textColor="#a9da13"-->
+            <!--android:textSize="16sp" />-->
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <!--<ImageView-->
+                <!--android:id="@+id/profilepic"-->
+                <!--android:layout_width="200dp"-->
+                <!--android:layout_height="180dp"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_marginBottom="20dp"-->
+                <!--android:layout_marginLeft="140dp"-->
+                <!--android:padding="16dp"-->
+                <!--android:src="@drawable/cameraicon" />-->
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profilepic"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="140dp"
+                    android:src="@drawable/man_profile_image" />
+
+                <ProgressBar
+                    android:id="@+id/progressprofilepic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+
+            <ProgressBar
+                android:id="@+id/progressdisplayname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/displayname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/person_white_icon"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:textColor="#ffffff"
+                android:hint="Display Name"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:textColorHint="#ffffff" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="15dp"
+                android:background="#f9d7db" />
+
+            <Button
+                android:id="@+id/saveprofile"
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_curved_button"
+                android:clickable="true"
+                android:padding="16dp"
+                android:text="Save"
+                android:textAllCaps="false"
+                android:textColor="#f16f7d"
+                android:textSize="18sp"
+                android:textStyle="normal" />
+
+            <Button
+                android:id="@+id/nextPhoneReg"
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/pink_curved_button"
+                android:clickable="true"
+                android:padding="16dp"
+                android:text="Next"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="normal" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

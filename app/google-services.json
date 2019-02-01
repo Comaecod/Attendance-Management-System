@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "953983453451",
+    "firebase_url": "https://atms-fb08c.firebaseio.com",
+    "project_id": "atms-fb08c",
+    "storage_bucket": "atms-fb08c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:953983453451:android:8006e4236eb009aa",
+        "android_client_info": {
+          "package_name": "com.example.vishnu.typroject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "953983453451-c25l1grklf50kdpvcr99l181d5som6q3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.vishnu.typroject",
+            "certificate_hash": "e2d8702529d96bbb47b4d70047721c82336b881b"
+          }
+        },
+        {
+          "client_id": "953983453451-t4tq5s39vkuvb7b0987gtsa9ssdb389u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSeI4-lUn5cgL3GkKIiePeI02hIWRRCOU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "953983453451-t4tq5s39vkuvb7b0987gtsa9ssdb389u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

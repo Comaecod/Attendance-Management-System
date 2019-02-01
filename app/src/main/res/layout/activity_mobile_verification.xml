@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_material_black_2"
+    android:orientation="vertical"
+    android:paddingLeft="18dp"
+    android:paddingRight="18dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_marginBottom="20dp"-->
+                <!--android:fontFamily="sans-serif-smallcaps"-->
+                <!--android:text="OTP will be valid sixty seconds from the time it was received! Also please avoid clicking on the 'Verify Code' Button leaving the code field empty. It might lead to unnecessary app crashes."-->
+                <!--android:textAlignment="center"-->
+                <!--android:textColor="#f4111c"-->
+                <!--android:textSize="17dp" />-->
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/ccp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:defaultNameCode="IN"
+                app:contentColor="#ffffff"
+                app:showFullName="true" />
+
+            <EditText
+                android:id="@+id/mobilenumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/phone_icon_white"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="Mobile Number"
+                android:inputType="number"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:textColor="#ffffff"
+                android:padding="8dp"
+                android:textColorHint="#ffffff" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#73e6bf"
+                android:id="@+id/viewmobver"/>
+
+            <Button
+                android:id="@+id/sendverificationcode"
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/pink_curved_button"
+                android:clickable="true"
+                android:padding="16dp"
+                android:text="Send Verification Code"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/verificationcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/lock_white_icon"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:visibility="gone"
+                android:enabled="false"
+                android:hint="Verification Code"
+                android:inputType="phone"
+                android:maxLength="6"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:textColorHint="#76f1d2" />
+
+            <com.chaos.view.PinView
+                android:id="@+id/pinView"
+                style="@style/PinWidget.PinView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:cursorVisible="true"
+                android:hint="000000"
+                android:textColorHint="#ffffff"
+                android:inputType="number"
+                android:maxLength="6"
+                android:textColor="#57f68a"
+                android:textSize="18sp"
+                app:itemCount="6"
+                app:itemHeight="40dp"
+                app:itemRadius="4dp"
+                app:itemSpacing="10dp"
+                app:itemWidth="40dp"
+                android:visibility="gone"
+                app:lineWidth="2dp" />
+
+            <Button
+                android:id="@+id/verifycode"
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/white_curved_button"
+                android:clickable="true"
+                android:padding="16dp"
+                android:text="Verify Code"
+                android:textAllCaps="false"
+                android:textColor="#580952"
+                android:textSize="18sp"
+                android:visibility="gone"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/resendcode"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Didn't receive code yet? Click here to resend"
+                android:textColor="#fff"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

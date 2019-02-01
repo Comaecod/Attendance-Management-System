@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#E16036"
+    tools:context=".TimetableActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/selectdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/white_curved_button"
+            android:text="Date"
+            android:textAllCaps="false"
+            android:textColor="#d500ff" />
+
+        <Button
+            android:id="@+id/lecture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/pink_curved_button"                   android:padding="15dp"
+            android:text="Lecture"
+            android:textAllCaps="false"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/practical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/pink_curved_button"                   android:padding="15dp"
+            android:text="Practical"
+            android:textAllCaps="false"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/spinnercourse"
+        android:layout_width="match_parent"
+        android:background="@drawable/white_curved_button"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="90dp"
+        android:visibility="visible"
+        android:textAlignment="center"/>
+
+    <Spinner
+        android:id="@+id/spinnertybvoc"
+        android:layout_width="match_parent"
+        android:background="@drawable/white_curved_button"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:visibility="gone"
+        android:textAlignment="center"/>
+
+    <Spinner
+        android:id="@+id/spinnersybvoc"
+        android:layout_width="match_parent"
+        android:background="@drawable/white_curved_button"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:visibility="gone"
+        android:textAlignment="center"/>
+
+    <Spinner
+        android:id="@+id/spinnerfybvoc"
+        android:layout_width="match_parent"
+        android:background="@drawable/white_curved_button"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:visibility="gone"
+        android:textAlignment="center"/>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#083D77"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Date"
+                android:layout_margin="10dp"
+                android:id="@+id/datefont"
+                android:textSize="35sp"
+                android:textColor="#E3B505"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/lecturetimefont"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Lecture"
+                android:visibility="gone"
+                android:gravity="center"
+                android:textColor="#5ADBFF"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/practicaltimefont"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Practical"
+                android:gravity="center"
+                android:textColor="#5ADBFF"
+                android:visibility="gone"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/course"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Course"
+                android:gravity="center"
+                android:textColor="#5ADBFF"
+                android:visibility="gone"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Subject"
+                android:gravity="center"
+                android:textColor="#5ADBFF"
+                android:visibility="gone"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp">
+
+                <ImageView
+                    android:id="@+id/img_main_card2_share"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="8dp"
+                    android:clickable="true"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_share_black_24dp" />
+
+                <ImageView
+                    android:id="@+id/img_main_card2_bookmark"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_toStartOf="@id/img_main_card2_share"
+                    android:clickable="true"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_bookmark_border_black_24dp" />
+
+                <ImageView
+                    android:id="@+id/img_main_card2_favorite"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_toStartOf="@id/img_main_card2_bookmark"
+                    android:clickable="true"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_favorite_border_black_24dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/submitdata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="20dp"
+        android:background="@drawable/white_curved_button"
+        android:text="Submit Timetable"
+        android:textAllCaps="false"
+        android:textColor="#d500ff" />
+
+</LinearLayout>

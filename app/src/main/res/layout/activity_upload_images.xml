@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/orangish_gradient"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".UploadImagesActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/choosefileupload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/orange_curved_button"
+                    android:padding="15dp"
+                    android:text="Choose File"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff" />
+
+
+            <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="#f9d7db" />-->
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/chosenimage"
+                android:layout_width="300dp"
+                android:src="@drawable/no_image_selected"
+                android:layout_height="300dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp" />
+
+
+
+            <EditText
+                android:id="@+id/fileName"
+                android:inputType="textPersonName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/transparent"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:textAlignment="center"
+                android:fontFamily="sans-serif-smallcaps"
+                android:hint="Enter File Name"
+                android:maxLines="1"
+                android:textColorHint="#000"
+                android:padding="8dp" />
+
+            <View
+                android:layout_width="300dp"
+                android:layout_height="1dp"
+                android:layout_marginBottom="15dp"
+                android:background="#f9d7db" />
+
+            <ProgressBar
+                android:id="@+id/progressHorizon"
+                style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/fileuploadfirebase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/white_curved_button"
+                android:padding="15dp"
+                android:text="Upload File"
+                android:textAllCaps="false"
+                android:textColor="#d500ff" />
+
+                <Button
+                    android:id="@+id/showuploads"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/pink_curved_button"                   android:padding="15dp"
+                    android:text="Show Uploads"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
